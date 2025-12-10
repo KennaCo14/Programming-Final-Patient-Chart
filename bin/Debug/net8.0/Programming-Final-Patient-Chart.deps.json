@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Programming-Final-Patient-Chart/1.0.0": {
+        "runtime": {
+          "Programming-Final-Patient-Chart.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Programming-Final-Patient-Chart/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

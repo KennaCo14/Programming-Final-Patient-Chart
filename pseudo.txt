@@ -1,0 +1,166 @@
+DataFile to patients.text
+ReportLogFile to PatientReportLog.text
+
+Random idString generator for patient ID
+
+Empty list of patients
+LoadPatients(patients, DataFile)
+
+Patient test
+    id = 999999;
+    name = blank
+    notes = blah
+    medications = ["medi1", "medi2"]
+    allergies = ["Aller1", "Aller2"]
+    LastEdit = date and time
+
+Convert test to file LoadPatients
+Assert files lines aren't Empty
+
+Generate unique ID for test
+assert that ID is not 999999
+
+set running = true
+while running is true
+    display 
+        list patients
+        add patients
+        save and exit
+    read choice
+
+    switch choice
+        1
+            call ListPatient(patients)
+        2 
+            call AddPatient(patients)
+        3
+            call SavePatient(patients)
+            set running to false
+        default
+            display invalid
+    switch End
+while ends
+
+Function LoadPatients(patients, filePath)
+    if file doesn't exist
+        create empty file
+    end if
+
+    read all lines from file into array lines
+    set patients = empty list
+    index at 0
+
+    while index < length of lines
+        patient = Patient.FromFileLines(lines, index)
+        if patient is not null
+            add patient to patients
+        end if
+    end while
+function end
+
+function SavePatient(patients, filePath)
+    make empty list outLine
+    foreach patient in patients
+        convert patient to file lines
+        add each line to outLine
+    end foreach
+write outline to file
+end function
+
+function ListPatient(patients)
+    Display all patients in format: Id | Name | Insurance | LastEdit
+
+    prompt "Enter Id to view details or blank to exist
+    read idInput
+    if idInput is a valid number
+        find patient with that id
+        if patient exists
+            display patient details
+                Name, notes, insurance, LastEdit
+                Medications / none
+                Allergies / none
+        else
+            display "patient not found
+        end if
+    end if
+function end
+
+function AddPatient(patients)
+    create new Patient p
+    set p.Id = GenerateUniqueID(patients)
+
+    prompt  for name, notes, insurance
+    Read and store values
+
+    Prompt for medications until user types "Done"
+        add medication to p.Medications
+
+    Prompt for allergies until user types "done"
+        add allergy to p.Allergies     
+
+    Set p.LastEdit = current date/time
+    add p to patients
+
+    Write("Added patient" + p.Name + "(ID" + p.Id +")")
+function end
+
+function WriteReport(message)
+    append "[current date/time] message" to ReportLogFile
+function end
+
+function GenerateUniqueID(patients)
+    make list of existingIds from patients
+    do
+        generate random 6-digit id
+    while id exists in existingIds
+    return id
+function end
+
+Class patient
+    properties
+        Id, Name, Notes, Insurance
+        Medications, Allergies
+        LastEdit
+    Function ToFileLines()
+        Create list lines
+        add line with Id|Name|Notes|Insurance|LastEdit
+        add Medications line
+        add medications or blank if empty
+        add Allergies line
+        add allergies or blank if empty
+        add "end" line
+        return lines
+    end function
+
+    static function FromFileLines(lines, index)
+        skip empty lines
+        if index >= length of lines
+            return null
+        end if
+
+        split current line by | into partks
+        if parts has less than 5 elements
+            add index and return null
+        end if
+
+        Create new Patient p
+        Assign Id, Name, Notes, Insurance, LastEdit from parts
+        add index
+
+        if next line is medications
+            add all following lines until allergies to medications
+        end if
+
+        if next line is allergies
+            add all following lines until end to allergies
+        end if
+
+        skip end line
+        return p
+    end function
+
+    function escape
+        replace any new lines or | characters with safe equivalents
+        return escaped idString
+    function end
+class end

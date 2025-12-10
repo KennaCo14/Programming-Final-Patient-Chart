@@ -1,0 +1,15 @@
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\bin\Debug\net8.0\Programming-Final-Patient-Chart.exe
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\bin\Debug\net8.0\Programming-Final-Patient-Chart.deps.json
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\bin\Debug\net8.0\Programming-Final-Patient-Chart.runtimeconfig.json
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\bin\Debug\net8.0\Programming-Final-Patient-Chart.dll
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\bin\Debug\net8.0\Programming-Final-Patient-Chart.pdb
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.AssemblyInfoInputs.cache
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.AssemblyInfo.cs
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.csproj.CoreCompileInputs.cache
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.sourcelink.json
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.dll
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\refint\Programming-Final-Patient-Chart.dll
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.pdb
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\Programming-Final-Patient-Chart.genruntimeconfig.cache
+C:\Users\kenna\my-code-final1\Programming-Final-Patient-Chart\obj\Debug\net8.0\ref\Programming-Final-Patient-Chart.dll

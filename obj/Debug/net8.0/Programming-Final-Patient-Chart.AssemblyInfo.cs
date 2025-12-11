@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Programming-Final-Patient-Chart")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b33dcc1062960bb39835d93fd952d64b71dd095")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4630309df363f9ce6d9028cd4da47e8f4fa6f348")]
 [assembly: System.Reflection.AssemblyProductAttribute("Programming-Final-Patient-Chart")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Programming-Final-Patient-Chart")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

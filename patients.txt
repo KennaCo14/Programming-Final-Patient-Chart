@@ -1,0 +1,17 @@
+589477|Mykenna|Stopped at clinic for runny nose and persistent dry cough|SelectHelp|2025-12-11 09:50:21
+MEDICATIONS
+-Daily acetaminophen
+acne medication
+daily vitamins
+ALLERGIES
+milk
+gluten
+bees
+penicilin
+End
+967003|Jane Doe|Nan|NAN|2025-12-11 09:59:32
+MEDICATIONS
+
+ALLERGIES
+
+End

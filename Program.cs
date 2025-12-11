@@ -3,7 +3,6 @@ using System.Diagnostics;
 
 //Files and Generator 
 string DataFile = "patients.txt";
-string ReportLogFile = "PatientReportLog.txt";
 Random idString = new Random();
 
 //formating for Patients and testing
@@ -188,12 +187,6 @@ void AddPatient(List<Patient> patients)
     Console.WriteLine($"Added new patient {p.Name} with ID {p.Id}");
 }
 
-//Reports everything entered into the file
-void WriteReport(string message)
-{
-    string line = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] {message}";
-    File.AppendAllText(ReportLogFile, line + "\r\n");
-}
 
 //Makes the ID
 int GenerateUniqueID(List<Patient> patients)
@@ -238,7 +231,6 @@ class Patient
         return lines;
     }
 
-//Formatting in the PatientReportLog
 public static Patient FromFileLines(string[] lines, ref int index)
 {
     while (index < lines.Length && lines[index].Trim().Length == 0)
@@ -293,13 +285,11 @@ public static Patient FromFileLines(string[] lines, ref int index)
             index++;
         }
     }
-    //When at the end of the descriptors in PatientReportLog, cuts off by giving end
     if (index < lines.Length && lines[index].Trim() == "End")
         index++;
 
     return p;
 }
-
     private string Escape(string s)
     {
         if (s == null) return "";
